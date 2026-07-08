@@ -1,14 +1,8 @@
 # League\Flysystem\AwsS3V3
 
-[![Author](http://img.shields.io/badge/author-@frankdejonge-blue.svg?style=flat-square)](https://twitter.com/frankdejonge)
-[![Build Status](https://img.shields.io/travis/thephpleague/flysystem-aws-s3-v3/master.svg?style=flat-square)](https://travis-ci.org/thephpleague/flysystem-aws-s3-v3)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/thephpleague/flysystem-aws-s3-v3.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/flysystem-aws-s3-v3)
-[![Quality Score](https://img.shields.io/scrutinizer/g/thephpleague/flysystem-aws-s3-v3.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/flysystem-aws-s3-v3)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Packagist Version](https://img.shields.io/packagist/v/league/flysystem-aws-s3-v3.svg?style=flat-square)](https://packagist.org/packages/league/flysystem-aws-s3-v3)
-[![Total Downloads](https://img.shields.io/packagist/dt/league/flysystem-aws-s3-v3.svg?style=flat-square)](https://packagist.org/packages/league/flysystem-aws-s3-v3)
+AWS S3 filesystem adapter for Flysystem, compatible with **PHP 7.4** and **PHP 8.0–8.4**.
 
-This is a Flysystem adapter for the aws-sdk-php v3.
+Works with Flysystem 2.x (PHP 7.4+) and Flysystem 3.x (PHP 8.0.2+).
 
 # Installation
 
@@ -20,7 +14,7 @@ composer require league/flysystem-aws-s3-v3
 
 Using standard `Aws\S3\S3Client`:
 
-``` php
+```php
 <?php
 use Aws\S3\S3Client;
 use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
@@ -43,7 +37,7 @@ $filesystem = new Filesystem($adapter);
 
 or using `Aws\S3\S3MultiRegionClient` which does not require to specify the `region` parameter:
 
-``` php
+```php
 <?php
 use Aws\S3\S3MultiRegionClient;
 use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
