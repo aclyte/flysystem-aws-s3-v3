@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 - 2026-07-10
+
+* Publish as `aclyte/flysystem-aws-s3-v3` on Packagist.
+* Add Flysystem 2.x and 3.x adapter (`AwsS3V3Adapter`) compatible with PHP 7.4–8.4.
+* Add compatibility polyfills for Flysystem 3-only interfaces when using Flysystem 2.x.
+* Replace deprecated `ListObjects` with `ListObjectsV2`.
+* Add `directoryExists`, public/temporary URLs, and checksum support (Flysystem 3 API).
+
 ## 1.0.30 - 2022-07-02
 
 * upgrade to list objects v2

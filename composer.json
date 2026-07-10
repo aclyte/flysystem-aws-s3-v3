@@ -1,21 +1,36 @@
 {
-    "name": "league/flysystem-aws-s3-v3",
-    "description": "AWS S3 filesystem adapter for Flysystem.",
-    "keywords": ["aws", "s3", "flysystem", "filesystem", "storage", "file", "files"],
+    "name": "aclyte/flysystem-aws-s3-v3",
+    "description": "AWS S3 filesystem adapter for Flysystem with PHP 7.4–8.4 support (Flysystem 2.x and 3.x).",
+    "keywords": [
+        "aws",
+        "s3",
+        "flysystem",
+        "filesystem",
+        "storage",
+        "file",
+        "files",
+        "php74",
+        "php84"
+    ],
     "type": "library",
-    "autoload": {
-        "files": [
-            "compatibility.php"
-        ],
-        "psr-4": {
-            "League\\Flysystem\\AwsS3V3\\": ""
-        }
+    "license": "MIT",
+    "homepage": "https://github.com/aclyte/flysystem-aws-s3-v3",
+    "support": {
+        "issues": "https://github.com/aclyte/flysystem-aws-s3-v3/issues",
+        "source": "https://github.com/aclyte/flysystem-aws-s3-v3"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "League\\Flysystem\\AwsS3V3\\": ""
+    "authors": [
+        {
+            "name": "Frank de Jonge",
+            "email": "info@frankdejonge.nl",
+            "role": "Original author"
+        },
+        {
+            "name": "Dmitry Smirnov",
+            "email": "caxopok@gmail.com",
+            "role": "Maintainer"
         }
-    },
+    ],
     "require": {
         "php": "^7.4 || ^8.0",
         "league/flysystem": "^2.0 || ^3.0",
@@ -25,11 +40,14 @@
     "conflict": {
         "guzzlehttp/ringphp": "<1.1.1"
     },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Frank de Jonge",
-            "email": "info@frankdejonge.nl"
+    "autoload": {
+        "files": [
+            "compatibility.php"
+        ],
+        "psr-4": {
+            "League\\Flysystem\\AwsS3V3\\": ""
         }
-    ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
